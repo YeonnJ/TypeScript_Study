@@ -1,6 +1,7 @@
 type Age = number;
 type Player = {
-  name: string;
+  readonly name: string;
+  //readonly : 읽기전용 기능, 변경이 불가능
   age?: Age;
 };
 
