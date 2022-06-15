@@ -16,7 +16,7 @@ SuperPrint([true, false, false]);
 SuperPrint(["hi", "bye"]);
 
 //example
-type Player<E> = {
+type PlayerMe<E> = {
   name: string;
   extraInfo: E; //generic type 생략도가능
 };
@@ -25,7 +25,7 @@ type FavFood = {
   favFood: string;
 };
 
-const YJ: Player<FavFood> = {
+const YJ: PlayerMe<FavFood> = {
   name: "yj",
   extraInfo: {
     favFood: "apple",
@@ -33,6 +33,6 @@ const YJ: Player<FavFood> = {
 };
 
 //example
-type A = Array<number>; //generic
+type AA = Array<number>; //generic
 
-let a: A = [1, 2, 3];
+let aa: AA = [1, 2, 3];
